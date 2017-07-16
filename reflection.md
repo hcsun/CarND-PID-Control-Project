@@ -26,9 +26,11 @@ steer_value = std::max(-1.0, std::min(steer_value, 1.0));
 ```
 ## Tuning Process
 At first, I use only P gain to control my car. The car was swinging through the road and could not finish the track.
-![alt text](./video/swinging_car.mov)
+* [Swinging Car](./video/swinging_car.mov)
+
 As I decreased the P gain, the swinging became less, but the car was still not capable of finishing the track. After I had introduced the D gain, the car became stable on the road and could nearly complete the track.
-![alt text](./video/good_car.mov)
+* [Good Car](./video/good_car.mov)
+
 After several experiments, I came up with control gain that is good enough to drive along the road.
 ```
 // Kp Ki Kd
