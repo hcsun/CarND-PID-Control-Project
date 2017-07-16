@@ -10,6 +10,8 @@ public:
   double i_error;
   double d_error;
 
+  // Record last crosstrack error for the d part
+  double previous_cte;
   /*
   * Coefficients
   */ 
